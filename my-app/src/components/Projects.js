@@ -1,53 +1,60 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { render } from 'react-dom';
+import { Button } from 'react-bootstrap'
 import sweetApples from '../assets/sweetapples.png';
-import japan from '../assets/views.jpg';
 import weatherDash from '../assets/weatherdash.png';
 import notetaker from '../assets/notetaker.png';
 import theDegenerate from '../assets/thedegenerate.png';
 
-
 const Projects = () => {
-  const cardInfo = [
-    {
-      image: { sweetApples },
-      title: "Sweet Apples",
-      text: "Sweet Apples was designed as a web application to allow users to view/post reviews to some of their favorite video games."
-    },
-    {
-      image: { theDegenerate},
-      title: "The Degenerate", 
-      text: "This web application allows a user to choose a sport and view live games as well as lets users place bets. "
-    },
-    {
-      image: { weatherDash },
-      title: "Weather Dashboard",
-      text: "A simple weather dashboard, allowing users to choose/ save a city and view weather for the next 5-days. "
-    },
-    {
-      image: { notetaker },
-      title: "Note Taker",
-      text: "Web application that allows a user to create a notes and save them for later use."
-    },
-  ];
-
-  const renderCard = (card, index) => {
-    return (
-      <Card id="Projects" className="box" key={index} style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={card.image} />
+  return (
+    <div className= "project-img">
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={sweetApples} />
         <Card.Body>
-          <Card.Title>{card.title}</Card.Title>
+          <Card.Title>Sweet Apples</Card.Title>
           <Card.Text>
-            {card.text}
+          Sweet Apples was designed as a web application to allow users to view/post reviews to some of their favorite video games.
           </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
-    )
-  };
 
-  return <div className="grid">{cardInfo.map(renderCard)}</div>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={ weatherDash } />
+        <Card.Body>
+          <Card.Title>Weather Dashboard</Card.Title>
+          <Card.Text>
+          A simple weather dashboard, allowing users to choose/ save a city and view weather for the next 5-days. 
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
 
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={ theDegenerate } />
+        <Card.Body>
+          <Card.Title>The Degenerate</Card.Title>
+          <Card.Text>
+          This web application allows a user to choose a sport and view live games as well as lets users place bets. 
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={ notetaker } />
+        <Card.Body>
+          <Card.Title>Note Taker</Card.Title>
+          <Card.Text>
+          Web application that allows a user to create a notes and save them for later use.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+
+    </div>
+  )
 }
 
 export default Projects

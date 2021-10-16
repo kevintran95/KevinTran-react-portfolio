@@ -191,3 +191,8 @@ address {
   padding: 30px
 
 }
+
+.project-img {
+  display: flex;
+  flex: wrap;
+}
