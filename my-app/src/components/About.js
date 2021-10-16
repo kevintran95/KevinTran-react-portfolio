@@ -1,5 +1,6 @@
 import React from 'react';
-import avatar from '../avatar.jpeg';
+import avatar from '../assets/avatar.jpeg';
+import resume from '../assets/RESUME.pdf'
 
 const About = () => {
   return (
@@ -13,8 +14,8 @@ const About = () => {
                     <p> I am currently located in Los Angeles, California. I graduated from California State University, Northridge with a bachelors degree in Psychology (Go Matadors!). Software and coding has always been very interesting to me and working at a big tech company has always been a huge goal of mine.</p>
                     <p>I am currently learning coding @UCLA and proficient in the following languages: JavaScript, Node.Js, Express.Js, and React </p>
                     <div className="btn-bar">
-                        <a className="px-btn theme" href="#">View Projects</a>
-                        <a className="px-btn theme-t" href="#">Download Resume</a>
+                        {/* <a className="px-btn theme" href="#">View Projects</a> */}
+                        <a className="px-btn theme-t" href={resume} alt="">View Resume</a>
                     </div>
                 </div>
             </div>

@@ -156,3 +156,14 @@ a {
     color: #fe4f6c;
 }
 
+/* Project Section */
+.box {
+  margin: 20px;
+}
+
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
