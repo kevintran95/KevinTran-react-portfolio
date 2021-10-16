@@ -1,6 +1,8 @@
 /* Navbar */
 a {
   display: flex;
+  flex: wrap;
+  justify-content: space-between;
   padding: 10px
 }
 
@@ -172,7 +174,14 @@ a {
 /* Contact Section */
 
 .contact {
+  margin: 20px;
+  
+}
+
+address {
   display: flex;
-  flex-wrap: wrap;
+  flex: wrap;
   flex-direction: row;
+  padding: 30px
+
 }

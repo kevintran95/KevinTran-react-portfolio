@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { render } from 'react-dom';
 import sweetApples from '../assets/sweetapples.png';
+import japan from '../assets/views.jpg'
 
 
 const Projects = () => {
@@ -12,7 +13,7 @@ const Projects = () => {
       text: "Sweet Apples was designed as a web application to allow users to view/post review to some of their favorite video games."
     },
     {
-      image: "",
+      image: { japan },
       title: "The Degenerate", 
       text: "This web application allows a user to choose a sport and view live games as well as lets users place bets. "
     },
