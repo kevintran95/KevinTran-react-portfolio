@@ -3,6 +3,7 @@ import { Card } from 'react-bootstrap';
 import { render } from 'react-dom';
 import sweetApples from '../assets/sweetapples.png';
 
+
 const Projects = () => {
   const cardInfo = [
     {
@@ -29,8 +30,8 @@ const Projects = () => {
 
   const renderCard = (card, index) => {
     return (
-      <Card className="box" key={index} style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px/180" src={card.image} />
+      <Card id="Projects" className="box" key={index} style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={card.image} />
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
           <Card.Text>
