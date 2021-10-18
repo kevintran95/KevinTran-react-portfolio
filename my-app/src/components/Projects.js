@@ -8,7 +8,7 @@ import theDegenerate from "../assets/thedegenerate.png";
 
 const Projects = () => {
   return (
-    <div className="project-img" id="projects">
+    <div className="project-cards" id="projects">
       <div className="project1">
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={sweetApples} />
@@ -34,7 +34,7 @@ const Projects = () => {
           <Card.Body>
             <Card.Title>Weather Dashboard</Card.Title>
             <Card.Text>
-              A simple weather dashboard, allowing users to choose/ save a city
+              A simple weather dashboard, allowing users to choose/save a city
               and view weather for the next 5-days.
             </Card.Text>
             <Button

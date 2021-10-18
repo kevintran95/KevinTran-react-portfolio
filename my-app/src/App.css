@@ -1,3 +1,9 @@
+* {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
 /* -------------------------------------------Navbar------------------------------------------- */
 a {
   display: flex;
@@ -176,34 +182,39 @@ h1 {
   text-decoration: underline;
 }
 
-.project-img {
+.project-cards {
   display: flex;
   flex: wrap;
   margin: 20px;
+  
 }
 
 .project1:hover {
   transform: scale(1.2);
   z-index: 1;
   transition: transform .2s;
+  box-shadow: 0 0 11px;
 }
 
 .project2:hover {
   transform: scale(1.2);
   z-index: 1;
   transition: transform .2s;
+  box-shadow: 0 0 11px;
 }
 
 .project3:hover {
   transform: scale(1.2);
   z-index: 1;
   transition: transform .2s;
+  box-shadow: 0 0 11px;
 }
 
 .project4:hover {
   transform: scale(1.2);
   z-index: 1;
   transition: transform .2s;
+  box-shadow: 0 0 11px;
 }
 
 
