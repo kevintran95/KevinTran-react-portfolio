@@ -15,7 +15,7 @@ const About = () => {
                     <p>I am currently learning coding @UCLA and proficient in the following languages: HTML, CSS, JavaScript, Node.Js, Express.Js, and React </p>
                     <div className="btn-bar">
                         {/* <a className="px-btn theme" href="#">View Projects</a> */}
-                        <a className="px-btn theme-t" target="__blank" href={resume} alt="">View Resume</a>
+                        <a className="px-btn theme-t" target="__blank" href={resume} alt="resumeBtn">View Resume</a>
                     </div>
                 </div>
             </div>
